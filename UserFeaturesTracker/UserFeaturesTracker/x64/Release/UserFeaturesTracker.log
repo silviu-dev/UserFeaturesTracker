@@ -1,0 +1,28 @@
+﻿  source.cpp
+  calibration.cpp
+  constants.hpp
+  helpers.cpp
+  main.cpp
+  pupilDetector.cpp
+  regression.cpp
+/dlib-19.23/dlib-19.23/dlib/all/source.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/dlib-19.23/dlib-19.23/dlib/all/source.cpp')
+  
+/calibration.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/calibration.cpp')
+  
+/constants.hpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/constants.hpp')
+  
+/helpers.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/helpers.cpp')
+  
+/main.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/main.cpp')
+  
+/pupilDetector.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/pupilDetector.cpp')
+  
+/regression.cpp(1,1): error C1356: unable to find mspdbcore.dll
+  (compiling source file '/regression.cpp')
+  
