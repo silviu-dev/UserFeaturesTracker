@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\CMakeFiles\57a0642fd6ebdc6cb50394f2e067f350\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7EC370E7-A04F-30C8-8067-1C9BBE52BC70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

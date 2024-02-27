@@ -1,0 +1,6 @@
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/CMakeFiles/UserFeaturesTracker.dir
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/CMakeFiles/dlib.dir
+C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/CMakeFiles/ALL_BUILD.dir

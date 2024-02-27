@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/dlib-populate"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/b58e7d032e2564ebca102fe0734e706c/dlib-populate.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/7290eaa3c01775124ac6231020c8503c/dlib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/683831ee313a7f75ba1ea87fa6cf2564/dlib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"dlib-populate"
+		],
+		"name" : "dlib-populate"
+	}
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\683831ee313a7f75ba1ea87fa6cf2564\dlib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\7290eaa3c01775124ac6231020c8503c\dlib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\b58e7d032e2564ebca102fe0734e706c\dlib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\zavel\Desktop\GItHubProjects\UserFeaturesTracker\UserFeaturesTracker\build\_deps\dlib-subbuild\CMakeFiles\dlib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FD0B7522-56BD-3476-AF03-577EC3D4EBC7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
