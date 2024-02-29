@@ -13,3 +13,4 @@ UserFeaturesTracker/build/
 *.pidb
 *.booproj.meta
 *.svd.meta
+*.dll

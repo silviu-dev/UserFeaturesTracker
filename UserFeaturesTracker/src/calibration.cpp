@@ -64,7 +64,6 @@ void calibration()
     setMouseCallback("CalibrationWindow", onClickCallback);
     while (calibrationPointsIt != calibrationPoints.end())
     {
-        //draw circle on the screen
         circle(img, Point((*calibrationPointsIt).x, (*calibrationPointsIt).y), 20, Scalar(0, 0, 255), -1, 1, 0);
         imshow("CalibrationWindow", img);
         if(leftClickPressed==true)
@@ -114,17 +113,14 @@ void processImage(cv::Mat& inputImage) {
     auto faces = faceDetector(dlibImage);
     if(!faces.empty())
     {
-        // Calculul coordonatelor și dimensiunilor dreptunghiului de decupare
         int x = int(faces[0].left() * inputImage.rows / resizedHeight);
         int y = int(faces[0].top() * inputImage.rows / resizedHeight);
         int width = int((faces[0].right() - faces[0].left()) * inputImage.rows / resizedHeight);
         int height = int((faces[0].bottom() - faces[0].top()) * inputImage.rows / resizedHeight);
-        // Asigurarea că dreptunghiul de decupare rămâne în limitele imaginii
         x = std::max(0, x);
         y = std::max(0, y);
         width = std::min(inputImage.cols - x, width);
         height = std::min(inputImage.rows - y, height);
-        // Crearea dreptunghiului de decupare
         dlib::rectangle face(x, y, x + width, y + height);
         faceLandmark = landmarkDetector(dlibImage, face);
     }
@@ -163,20 +159,15 @@ std::pair<cv::Point, cv::Point> calculateGaze()
     }
     imageToScreenFactorX = (double)screenWidth / (frame.cols);
     imageToScreenFactorY = (double)screenHeight / (frame.rows);
-    // Afișarea feed-ului video în fereastra "Camera Web" în firul de execuție principal
-    // Crearea unui fir de execuție secundar pentru procesarea imaginii
+
     if(processingThredOngoing == false)
     {
         resize(frame, croppedFrame, Size(), frame.rows / resizedHeight, frame.rows / resizedHeight, INTER_CUBIC);
         processingThredOngoing = true;
         std::thread processingThread(processImage, croppedFrame.clone());
-        processingThread.detach(); // Detasam firul de execuție pentru a rula independent
+        processingThread.detach();
     }
-    // Aici puteti continua executia fara a astepta dupa firul secundar
-
-    // Așteptăm un scurt interval de timp pentru a evita prea multa solicitare a procesorului
     cv::waitKey(1);
-    // Verificăm dacă operația costisitoare este finalizată în mod asincron
     if (processingFinished == true) 
     {
         processingFinished = false;
@@ -214,7 +205,6 @@ std::pair<cv::Point, cv::Point> calculateGaze()
         }
     }
     cv::imshow("eyeTracker", frame);
-    // Așteptare pentru apăsarea tastei 'ESC' pentru a ieși din buclă
     if (cv::waitKey(1) == 27)
         break;
     }

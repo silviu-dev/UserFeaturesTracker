@@ -57,7 +57,6 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
     steady_clock::time_point start1, start2, stop1, stop2;
     while (true)
     {
-        //zstart1 = high_resolution_clock::now();
         cam >> frame;
         imageToScreenFactorX = (double)screenWidth / frame.cols;
         imageToScreenFactorY = (double)screenHeight / frame.rows;
@@ -66,12 +65,6 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
         cv_image<bgr_pixel> dlibImage(croppedFrame);
         cv_image<bgr_pixel> fulldlibImage(frame);
         faces = faceDetector(dlibImage);
-        //stop1 = high_resolution_clock::now();
-        //auto duration = duration_cast<milliseconds>(stop1 - start1);
-        //cout << "Time taken for face detection: "
-        //    << duration.count() << " milliseconds" << endl;
-        //start2 = high_resolution_clock::now();
-
         if (faces.size() != 0)
         {
             dlib::rectangle rect(int(faces[0].left() * frame.rows / resizedHeight),
@@ -129,17 +122,10 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
             userGazeCallback((rightEyeRegX(rightX) + leftEyeRegX(leftX)) / 2,
                 (rightEyeRegY(rightY) + leftEyeRegY(leftY)) / 2);
 
-            //cv::rectangle(frame, eyesPerimeter.first, cv::Scalar(0, 255, 0));
-            //cv::rectangle(frame, eyesPerimeter.second, cv::Scalar(0, 255, 0));
             flip(frame, frame, 1);
             imshow("eyeTracker", frame);
-            //stop2 = high_resolution_clock::now();
-            //auto duration2 = duration_cast<milliseconds>(stop2 - start2);
-            //cout << "Time taken for eyes detection: "
-            //    << duration2.count() << " milliseconds" << endl;
         }
 
-        // imshow("eyeTracker", frame);
         if (waitKey(1) == 27)
         {
             break;
