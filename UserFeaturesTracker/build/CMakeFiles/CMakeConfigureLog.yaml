@@ -3223,3 +3223,1569 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:27:52 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.10
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:31:15 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.02
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:33:17 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.02
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:37:22 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.90
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:38:49 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:44:32 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.12
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:45:31 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.13
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:47:39 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:49:21 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.09
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:51:35 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:56:29 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.02
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:57:22 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 12:58:07 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:00:58 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:02:47 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:11:39 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.13
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:15:28 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:18:39 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:23:13 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.05
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:27:29 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.01
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:31:43 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.01
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:35:08 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.99
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:37:53 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.99
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:43:56 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:45:15 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.02
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:45:53 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.07
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "build/_deps/dlib-src/dlib/CMakeLists.txt:485 (include)"
+    directories:
+      source: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2/28/2024 1:46:38 PM.
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): fatal error C1189: #error:  "No NEON" [C:\\Users\\zavel\\Desktop\\GItHubProjects\\UserFeaturesTracker\\UserFeaturesTracker\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 1
+...

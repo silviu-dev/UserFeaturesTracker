@@ -41,7 +41,6 @@ void onClickCallback(int event, int x, int y, int flags, void*)
 }
 void calibration()
 {
-    shape_predictor landmarkDetector;
     deserialize("shape_predictor_68_face_landmarks.dat") >> landmarkDetector;
     namedWindow("CalibrationWindow", WINDOW_NORMAL);
     setWindowProperty("CalibrationWindow", WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
@@ -53,10 +52,10 @@ void calibration()
 
     std::vector<std::pair<cv::Point, cv::Point>> detecteEyePoints;
     std::vector<cv::Point> calibrationPoints
-    { {20,20},{20 + windowWidth / 3,20},{20 + windowWidth / 3 * 2,20}, {20 + windowWidth,20},
-    {20,20 + windowHeight / 3 },{20 + windowWidth / 3,20 + windowHeight / 3},{20 + windowWidth / 3 * 2,20 + windowHeight / 3}, {20 + windowWidth,20 + windowHeight / 3},
-    {20,20 + windowHeight / 3 * 2},{20 + windowWidth / 3,20 + windowHeight / 3 * 2},{20 + windowWidth / 3 * 2,20 + windowHeight / 3 * 2}, {20 + windowWidth,20 + windowHeight / 3 * 2},
-    {20,20 + windowHeight},{20 + windowWidth / 3,20 + windowHeight},{20 + windowWidth / 3 * 2,20 + windowHeight}, {20 + windowWidth,20 + windowHeight} };
+    { {20,20},{20 + windowWidth / 3,20}};//{20 + windowWidth / 3 * 2,20}, {20 + windowWidth,20},
+    // {20,20 + windowHeight / 3 },{20 + windowWidth / 3,20 + windowHeight / 3},{20 + windowWidth / 3 * 2,20 + windowHeight / 3}, {20 + windowWidth,20 + windowHeight / 3},
+    // {20,20 + windowHeight / 3 * 2},{20 + windowWidth / 3,20 + windowHeight / 3 * 2},{20 + windowWidth / 3 * 2,20 + windowHeight / 3 * 2}, {20 + windowWidth,20 + windowHeight / 3 * 2},
+    // {20,20 + windowHeight},{20 + windowWidth / 3,20 + windowHeight},{20 + windowWidth / 3 * 2,20 + windowHeight}, {20 + windowWidth,20 + windowHeight} };
 
     auto calibrationPointsIt = calibrationPoints.begin();
     auto detecteEyePointsIt = std::inserter<std::vector<std::pair<
@@ -83,6 +82,7 @@ void calibration()
     std::vector<cv::Point> detectedLeftEye;
     for (auto it = detecteEyePoints.begin(); it != detecteEyePoints.end(); it++)
     {
+        std::cout<<"rightEye, leftEye "<<(*it).first<<" "<<(*it).second<<std::endl;
         detectedRightEye.push_back((*it).first);
         detectedLeftEye.push_back((*it).second);
     }
@@ -109,88 +109,6 @@ void calibration()
     destroyWindow("CalibrationWindow");
 }
 
-// // void onClickCallback(int event, int x, int y, int flags, void* userdata)
-// // {
-// //     //if left mouse click was press
-// //     if (event == EVENT_LBUTTONDOWN)
-// //     {
-// //         float resizedHeight = 480;
-// //         //std::vector<KeyPoint> rightEyekeypoints, leftEyekeypoints;
-// //         frontal_face_detector faceDetector = get_frontal_face_detector();
-
-// //         auto context = (std::tuple<std::reference_wrapper<std::insert_iterator<std::vector<
-// //             std::pair<cv::Point, cv::Point> >>>, std::reference_wrapper<
-// //             std::vector<cv::Point>::iterator>,
-// //             std::reference_wrapper<shape_predictor>>*)userdata;
-// //         auto& detectedPointsIt = std::get<0>(*context).get();
-// //         auto& calibrationPointsIt = std::get<1>(*context).get();
-// //         auto& landmarkDetector = std::get<2>(*context).get();
-// //         Mat frame, croppedFrame, leftEye, rightEye;
-// //         bool readEye = false;
-// //         cv::VideoCapture cam;
-// //         cam.open(0);
-// //         while (!readEye)
-// //         {
-// //             cam >> frame;
-
-// //             imageToScreenFactorX = (double)screenWidth / (frame.cols);
-// //             imageToScreenFactorY = (double)screenHeight / (frame.rows);
-// //             resize(frame, croppedFrame, Size(), frame.rows / resizedHeight, frame.rows / resizedHeight, INTER_CUBIC);
-// //             cv_image<bgr_pixel> dlibImage(croppedFrame);
-// //             auto faces = faceDetector(dlibImage);
-
-// //             if (faces.size() != 0)
-// //             {
-// //                 dlib::rectangle rect(int(faces[0].left() * frame.rows / resizedHeight),
-// //                     int(faces[0].top() * frame.rows / resizedHeight),
-// //                     int(faces[0].right() * frame.rows / resizedHeight),
-// //                     int(faces[0].bottom() * frame.rows / resizedHeight));
-
-// //                 full_object_detection faceLandmark = landmarkDetector(dlibImage, rect);
-// //                 auto eyesPerimeter = getEyesPerimeter(faceLandmark);
-// //                 leftEye = frame(eyesPerimeter.first);
-// //                 rightEye = frame(eyesPerimeter.second);
-// //                 cv::rectangle(frame, eyesPerimeter.first, cv::Scalar(0, 255, 0));
-// //                 cv::rectangle(frame, eyesPerimeter.second, cv::Scalar(0, 255, 0));
-                
-// //                 auto leftEyepoint = findEyeCenter(frame, eyesPerimeter.first);
-// //                 auto rightEyepoint = findEyeCenter(frame, eyesPerimeter.second);
-// //                 auto faceCenterPoint = getFaceCenter(faceLandmark);
-
-// //                 leftEyepoint = convertEyePointToFacePoint(leftEyepoint, eyesPerimeter.first);
-// //                 rightEyepoint = convertEyePointToFacePoint(rightEyepoint, eyesPerimeter.second);
-
-// //                 circle(frame, leftEyepoint, 2, Scalar(0, 0, 255), -1, 1, 0);
-// //                 circle(frame, rightEyepoint, 2, Scalar(0, 0, 255), -1, 1, 0);
-// //                 circle(frame, faceCenterPoint, 2, Scalar(0, 0, 255), -1, 1, 0);
-// //                 imshow("eyeTracker", frame);
-// //                 leftEyepoint = cv::Point(leftEyepoint.x * imageToScreenFactorX,
-// //                     leftEyepoint.y * imageToScreenFactorY);
-// //                 rightEyepoint = cv::Point(rightEyepoint.x * imageToScreenFactorX,
-// //                     rightEyepoint.y * imageToScreenFactorY);
-// //                 faceCenterPoint = cv::Point(faceCenterPoint.x * imageToScreenFactorX,
-// //                     faceCenterPoint.y * imageToScreenFactorY);
-// //                 if (leftEyepoint != Point(-1, -1) && rightEyepoint != Point(-1, -1))
-// //                 {
-// //                     readEye = true;
-// //                     (*detectedPointsIt) = std::make_pair(cv::Point(rightEyepoint.x - faceCenterPoint.x,
-// //                         rightEyepoint.y - faceCenterPoint.y),
-// //                         cv::Point(leftEyepoint.x - faceCenterPoint.x, leftEyepoint.y - faceCenterPoint.y));
-
-// //                 }
-
-// //             }
-// //             else
-// //             {
-// //                 cout << "No faces detected\n";
-// //             }
-// //             waitKey(1);
-
-// //         }
-// //         calibrationPointsIt++;
-// //     }
-// // }
-
 void processImage(const cv::Mat& inputImage) {
     dlib::cv_image<dlib::bgr_pixel> dlibImage(inputImage);
 
@@ -198,15 +116,27 @@ void processImage(const cv::Mat& inputImage) {
     auto faces = faceDetector(dlibImage);
     if(!faces.empty())
     {
-        cout<<"fata detectata"<<std::endl;
-        dlib::rectangle face(int(faces[0].left() * inputImage.rows / resizedHeight),
-        int(faces[0].top() * inputImage.rows / resizedHeight),
-        int(faces[0].right() * inputImage.rows / resizedHeight),
-        int(faces[0].bottom() * inputImage.rows / resizedHeight));
+        // Calculul coordonatelor și dimensiunilor dreptunghiului de decupare
+        int x = int(faces[0].left() * inputImage.cols / resizedHeight);
+        int y = int(faces[0].top() * inputImage.rows / resizedHeight);
+        int width = int((faces[0].right() - faces[0].left()) * inputImage.cols / resizedHeight);
+        int height = int((faces[0].bottom() - faces[0].top()) * inputImage.rows / resizedHeight);
+
+        // Asigurarea că dreptunghiul de decupare rămâne în limitele imaginii
+        x = std::max(0, x);
+        y = std::max(0, y);
+        width = std::min(inputImage.cols - x, width);
+        height = std::min(inputImage.rows - y, height);
+
+        // Crearea dreptunghiului de decupare
+        dlib::rectangle face(x, y, x + width, y + height);
+
         faceLandmark = landmarkDetector(dlibImage, face);
+        cout<<"faceLandmark.nr "<<faceLandmark.num_parts();
     }
     else
     {
+         faceLandmark = dlib::full_object_detection();
          cout<<"fata NEdetectata"<<std::endl;
     }
     processingFinished = true;
@@ -216,12 +146,14 @@ void processImage(const cv::Mat& inputImage) {
 
 std::pair<cv::Point, cv::Point> calculateGaze()
 {
-
+    std::cerr << "silviu intrare in calculateGaze"<<std::endl;
+    cv::setMouseCallback("CalibrationWindow", NULL);
     faceDetector = get_frontal_face_detector();
 
     cv::VideoCapture cap(0);
     if (!cap.isOpened()) {
         std::cerr << "Eroare la deschiderea camerei web." << std::endl;
+        setMouseCallback("CalibrationWindow", onClickCallback);
         return std::make_pair(cv::Point(-1, -1), cv::Point(-1, -1));
     }
 
@@ -234,6 +166,7 @@ std::pair<cv::Point, cv::Point> calculateGaze()
         std::cerr << "Frame gol sau nu a putut fi citit de la camera web." << std::endl;
         break;
     }
+    cv::imwrite("silviu.jpg", frame);
     imageToScreenFactorX = (double)screenWidth / (frame.cols);
     imageToScreenFactorY = (double)screenHeight / (frame.rows);
     resize(frame, croppedFrame, Size(), frame.rows / resizedHeight, frame.rows / resizedHeight, INTER_CUBIC);
@@ -252,6 +185,8 @@ std::pair<cv::Point, cv::Point> calculateGaze()
     // Verificăm dacă operația costisitoare este finalizată în mod asincron
     if (processingFinished == true) 
     {
+        processingFinished = false;
+        processingThredOngoing=false;
         std::cout<<faceLandmark.num_parts()<<std::endl;
         if (faceLandmark.num_parts() == 68)
         {
@@ -277,6 +212,8 @@ std::pair<cv::Point, cv::Point> calculateGaze()
                 faceCenterPoint.y * imageToScreenFactorY);
             if (leftEyepoint != Point(-1, -1) && rightEyepoint != Point(-1, -1))
             {
+                cap.release();
+                setMouseCallback("CalibrationWindow", onClickCallback);
                 return std::make_pair(cv::Point(rightEyepoint.x - faceCenterPoint.x,
                     rightEyepoint.y - faceCenterPoint.y),
                     cv::Point(leftEyepoint.x - faceCenterPoint.x, leftEyepoint.y - faceCenterPoint.y));
@@ -287,9 +224,6 @@ std::pair<cv::Point, cv::Point> calculateGaze()
         {
             std::cout<<"FATANEDETECTATA"<<std::endl;
         }
-        // Resetează starea pentru următoarea iterație
-        processingFinished = false;
-        processingThredOngoing=false;
     }
     cv::imshow("eyeTracker", frame);
     // Așteptare pentru apăsarea tastei 'ESC' pentru a ieși din buclă
