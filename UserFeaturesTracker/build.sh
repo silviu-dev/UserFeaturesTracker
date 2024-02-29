@@ -1,5 +1,5 @@
 #!/bin/sh
 #rm -rf build
 cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -G "Visual Studio 16 2019" && \
-cmake --build build --config Release -t UserFeaturesTracker && \
+cmake --build build --config Release -t UserFeaturesTrackerLIB && \
 ./build/Release/UserFeaturesTracker.exe

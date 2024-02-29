@@ -27,16 +27,12 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
 	UserMouthCallback userMouthCallback, UserBlinkCallback userBlinkCallback, bool calib)
 {
     namedWindow("eyeTracker", WINDOW_NORMAL);
-    std::cout<<"silviu 1\n";
     if (calib)
-    {std::cout<<"silviu 2\n";
+    {
         calibration();
     }
-    std::cout<<"silviu 3\n";
     decision_function<kernel_type> rightEyeRegX, rightEyeRegY, leftEyeRegX, leftEyeRegY;
-    std::cout<<"silviu 4\n";
     deserialize("rightEyeRegX.dat") >> rightEyeRegX;
-    std::cout<<"silviu 5\n";
     deserialize("rightEyeRegY.dat") >> rightEyeRegY;
     deserialize("leftEyeRegX.dat") >> leftEyeRegX;
     deserialize("leftEyeRegY.dat") >> leftEyeRegY;
@@ -92,7 +88,6 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
             auto faceCenterPoint = getFaceCenter(faceLandmark);
             auto blinkPair = verifyBlink(faceLandmark);
             double mouthOpening = getMouthOpening(faceLandmark);
-            cout << mouthOpening << " ";
             circle(frame, cv::Point(faceLandmark.part(62).x(), faceLandmark.part(62).y()), 
                 3, Scalar(0, 255, 255), -1, 8, 0);
             circle(frame, cv::Point(faceLandmark.part(66).x(), faceLandmark.part(66).y()+ 
@@ -128,8 +123,8 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
             leftX(0) = (leftEyepoint.x - faceCenterPoint.x);
             leftY(0) = (leftEyepoint.y - faceCenterPoint.y);
 
-          //  SetCursorPos((rightEyeRegX(rightX) + leftEyeRegX(leftX)) / 2,
-            //    (rightEyeRegY(rightY) + leftEyeRegY(leftY)) / 2);
+           // SetCursorPos((rightEyeRegX(rightX) + leftEyeRegX(leftX)) / 2,
+           //     (rightEyeRegY(rightY) + leftEyeRegY(leftY)) / 2);
 
             userGazeCallback((rightEyeRegX(rightX) + leftEyeRegX(leftX)) / 2,
                 (rightEyeRegY(rightY) + leftEyeRegY(leftY)) / 2);
@@ -142,10 +137,6 @@ void getUserFeatures(UserPositionCallback userPositionCallback, UserGazeCallback
             //auto duration2 = duration_cast<milliseconds>(stop2 - start2);
             //cout << "Time taken for eyes detection: "
             //    << duration2.count() << " milliseconds" << endl;
-        }
-        else
-        {
-            cout << "No faces detected\n";
         }
 
         // imshow("eyeTracker", frame);

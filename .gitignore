@@ -1,1 +1,15 @@
-build/
+UserFeaturesTracker/build/
+*.jpg
+*.dat
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+*.pidb.meta
+*.pidb
+*.booproj.meta
+*.svd.meta

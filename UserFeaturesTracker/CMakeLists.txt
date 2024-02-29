@@ -31,12 +31,21 @@ FetchContent_MakeAvailable(dlib)
 
 # Add the executable
 add_executable(UserFeaturesTracker ${SOURCES})
+add_library(UserFeaturesTrackerLIB SHARED ${SOURCES})
 
 # Add the target includes for UserFeaturesTracker 
 target_include_directories(UserFeaturesTracker PRIVATE ${INCLUDE_DIR})
 target_include_directories(UserFeaturesTracker PRIVATE ${OpenCV_INCLUDE_DIRS})
 
+# Add the target includes for UserFeaturesTrackerLIB 
+target_include_directories(UserFeaturesTrackerLIB PRIVATE ${INCLUDE_DIR})
+target_include_directories(UserFeaturesTrackerLIB PRIVATE ${OpenCV_INCLUDE_DIRS})
+
 #===================== LINKING LIBRARIES =======================#
 target_link_libraries(UserFeaturesTracker ${OpenCV_LIBS} )
 
 target_link_libraries(UserFeaturesTracker dlib::dlib)
+
+target_link_libraries(UserFeaturesTrackerLIB ${OpenCV_LIBS} )
+
+target_link_libraries(UserFeaturesTrackerLIB dlib::dlib)

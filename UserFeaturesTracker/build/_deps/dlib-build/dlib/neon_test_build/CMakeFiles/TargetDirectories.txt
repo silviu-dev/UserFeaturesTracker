@@ -1,3 +1,0 @@
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build/CMakeFiles/neon_test.dir
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build/CMakeFiles/ALL_BUILD.dir
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-build/dlib/neon_test_build/CMakeFiles/ZERO_CHECK.dir

@@ -1,3 +1,0 @@
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/dlib-populate.dir
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/zavel/Desktop/GItHubProjects/UserFeaturesTracker/UserFeaturesTracker/build/_deps/dlib-subbuild/CMakeFiles/ZERO_CHECK.dir
