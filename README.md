@@ -34,8 +34,8 @@ The plugin is build as an .dll which exports an simple interface:
 extern "C" __declspec(dllexport)
 void getUserFeatures(UserPositionCallback, UserGazeCallback, UserMouthCallback, UserBlinkCallback, bool needCalibration);
 ```
-There are for callbacks to handle the information from the .dll and one flag which sets the calibration step.
-If the calibration is enabled then befor the first call to the .dll, the user is promted with an window and asked to look to a series of read dots in order to better calibrate the underleaing models.
+There are four callbacks to handle the information from the .dll and one flag that sets the calibration step. 
+If the calibration is enabled, then before the first call to the .dll, the user is prompted with a window and asked to look at a series of red dots in order to better calibrate the underlying models.
   
    <img src="https://github.com/silviu-dev/UserFeaturesTracker/assets/56478018/98208d77-bacf-4040-be9a-3c9d5108cc37" alt="Human Imitator" width="300">
 
